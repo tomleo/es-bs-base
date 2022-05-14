@@ -123,7 +123,7 @@ $enable-hover-media-query:                    false !default; // Deprecated, no 
 $enable-grid-classes:                         true !default;
 $enable-pointer-cursor-for-buttons:           true !default;
 $enable-print-styles:                         true !default;
-$enable-responsive-font-sizes:                false !default;  // TODO: set to true in es-site
+$enable-responsive-font-sizes:                true !default;
 $enable-validation-icons:                     false !default;
 $enable-deprecation-messages:                 false !default;
 
@@ -1147,3 +1147,32 @@ $user-selects: all, auto, none !default;
 
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+
+//----------------------------
+// EnergySage Extended Colors
+//----------------------------
+
+$mid: $gray-300;
+$mid-dark: $gray-600; // Non standard
+$highlight: $indigo; // Non standard
+$highlight-dark: $blue; // Non standard
+$lightblue: #8cd1ff;
+$grayblue: #c9e9f6;
+
+$font-size-xxl: $font-size-base * 3;
+$font-size-xl: $font-size-base * 1.375;
+$font-size-xs: $font-size-base * 0.75;
+
+$headings-font-family-higher: null; // non standard
+
+$b-table-stacked-gap: 2rem;
+$b-table-sort-icon-bg-not-sorted: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'><path fill='white' opacity='.3' d='M51 1l25 23 24 22H1l25-22zM51 101l25-23 24-22H1l25 22z'/></svg>");
+$b-table-sort-icon-bg-ascending: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'><path fill='white' d='M51 1l25 23 24 22H1l25-22z'/><path fill='white' opacity='.3' d='M51 101l25-23 24-22H1l25 22z'/></svg>");
+$b-table-sort-icon-bg-descending: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'><path fill='white' opacity='.3' d='M51 1l25 23 24 22H1l25-22z'/><path fill='white' d='M51 101l25-23 24-22H1l25 22z'/></svg>");
+
+$input-color-placeholder: $gray-700;
+
+$font-family-serif: $font-family-sans-serif;
+$font-weight-lightest: lighter;
+$font-weight-boldest: 700;
