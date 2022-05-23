@@ -1,7 +1,10 @@
 {
   "name": "es-bs-base",
   "description": "Base CSS for EnergySage design system based on Bootstrap v4",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "config": {
+    "version_short": "0.1"
+  },
   "keywords": [
     "css",
     "sass",
