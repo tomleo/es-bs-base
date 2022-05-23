@@ -17,6 +17,8 @@
       "border-bottom-right-radius",
       "border-bottom-left-radius",
       "transition"
-    ]
+    ],
+    "color-hex-length": null,
+    "number-leading-zero": null
   }
 }

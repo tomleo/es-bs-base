@@ -7,7 +7,6 @@
 
 $white:    #fff !default;
 $gray-100: #fafafa !default;
-$gray-150: #ececec !default;
 $gray-200: #ececec !default;
 $gray-300: #dddddd !default;
 $gray-400: #bababa !default;
@@ -249,7 +248,7 @@ $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
 $component-active-color:      $white !default;
-$component-active-bg:         theme-color("indigo") !default;
+$component-active-bg:         $indigo !default;
 
 $caret-width:                 .4em !default;
 $caret-vertical-align:        $caret-width * .85 !default;
@@ -385,11 +384,11 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .650rem !default;
+$input-btn-padding-y:         .65rem !default;
 $input-btn-padding-x:         .75rem !default;
 $input-btn-font-family:       $font-family-sans-serif !default;
 $input-btn-font-size:         $font-size-base !default;
-$input-btn-line-height:       $line-height-base  * 0.9 !default;
+$input-btn-line-height:       $line-height-base * 0.9 !default;
 
 $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
@@ -1153,6 +1152,7 @@ $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
 // EnergySage Extended Colors
 //----------------------------
 
+// fusv-disable
 $mid: $gray-300;
 $mid-dark: $gray-600; // Non standard
 $highlight: $indigo; // Non standard
@@ -1176,3 +1176,4 @@ $input-color-placeholder: $gray-700;
 $font-family-serif: $font-family-sans-serif;
 $font-weight-lightest: lighter;
 $font-weight-boldest: 700;
+// fusv-enable
