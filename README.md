@@ -1,43 +1,55 @@
-<p align="center">
-  <a href="https://getbootstrap.com/">
-    <img src="https://getbootstrap.com/docs/4.6/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="72" height="72">
-  </a>
-</p>
+# EnergySage es-bs-base
 
-<h3 align="center">Bootstrap</h3>
+An EnergySage branded Bootstrap
 
-<p align="center">
-  Sleek, intuitive, and powerful front-end framework for faster and easier web development.
-  <br>
-  <a href="https://getbootstrap.com/docs/4.6/"><strong>Explore Bootstrap docs »</strong></a>
-  <br>
-  <br>
-  <a href="https://github.com/twbs/bootstrap/issues/new?template=bug_report.md">Report bug</a>
-  ·
-  <a href="https://github.com/twbs/bootstrap/issues/new?template=feature_request.md">Request feature</a>
-  ·
-  <a href="https://themes.getbootstrap.com/">Themes</a>
-  ·
-  <a href="https://blog.getbootstrap.com/">Blog</a>
-</p>
+## Usage
 
+Dependencies for Django
 
-## Table of contents
+```html
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/es-bs-base@0.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/HzsDxor0D2Kr3OmJOdJ/6NGC9/5ADDEXmBATS6Q4lmVlfc+W69bDSevZ1oXXpnL" crossorigin="anonymous">
 
-- [Quick start](#quick-start)
-- [Status](#status)
-- [What's included](#whats-included)
-- [Bugs and feature requests](#bugs-and-feature-requests)
-- [Documentation](#documentation)
-- [Contributing](#contributing)
-- [Community](#community)
-- [Versioning](#versioning)
-- [Creators](#creators)
-- [Thanks](#thanks)
-- [Copyright and license](#copyright-and-license)
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/es-bs-base@0.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-rFjmWkQarRMLmS4gmgGFJJpv1wPehpBZjbbursNR1K/8U4DZp3ehpW8x5GOBrLvS" crossorigin="anonymous"></script>
+```
+
+Or you can split the dependencies for JavaScript
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/es-bs-base@0.1.0/dist/js/bootstrap.min.js" integrity="sha384-GsH/Mph6Qam9aL9saQZovjWdPJ8zV4wJUp093sGem578iwcgsgHSS8i0muB6VWn5" crossorigin="anonymous"></script>
+```
 
 
-## Quick start
+## Bootstrap
+
+### Table of contents
+
+- [EnergySage es-bs-base](#energysage-es-bs-base)
+  - [Usage](#usage)
+  - [Bootstrap](#bootstrap)
+    - [Table of contents](#table-of-contents)
+    - [Quick start](#quick-start)
+    - [Status](#status)
+    - [What's included](#whats-included)
+    - [Bugs and feature requests](#bugs-and-feature-requests)
+    - [Documentation](#documentation)
+      - [Running documentation locally](#running-documentation-locally)
+      - [Documentation for previous releases](#documentation-for-previous-releases)
+    - [Contributing](#contributing)
+    - [Community](#community)
+    - [Versioning](#versioning)
+    - [Creators](#creators)
+    - [Thanks](#thanks)
+    - [Sponsors](#sponsors)
+    - [Backers](#backers)
+    - [Copyright and license](#copyright-and-license)
+
+
+### Quick start
 
 Several quick start options are available:
 
@@ -51,7 +63,7 @@ Several quick start options are available:
 Read the [Getting started page](https://getbootstrap.com/docs/4.6/getting-started/introduction/) for information on the framework contents, templates and examples, and more.
 
 
-## Status
+### Status
 
 [![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com/)
 [![Build Status](https://img.shields.io/github/workflow/status/twbs/bootstrap/JS%20Tests/v4-dev?label=JS%20Tests&logo=github)](https://github.com/twbs/bootstrap/actions?query=workflow%3AJS+Tests+branch%3Av4-dev)
@@ -68,7 +80,7 @@ Read the [Getting started page](https://getbootstrap.com/docs/4.6/getting-starte
 [![Sponsors on Open Collective](https://img.shields.io/opencollective/sponsors/bootstrap)](#sponsors)
 
 
-## What's included
+### What's included
 
 Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations.
 
@@ -105,18 +117,18 @@ bootstrap/
 We provide compiled CSS and JS (`bootstrap.*`), as well as compiled and minified CSS and JS (`bootstrap.min.*`). [Source maps](https://developers.google.com/web/tools/chrome-devtools/javascript/source-maps) (`bootstrap.*.map`) are available for use with certain browsers' developer tools. Bundled JS files (`bootstrap.bundle.js` and minified `bootstrap.bundle.min.js`) include [Popper](https://popper.js.org/), but not [jQuery](https://jquery.com/).
 
 
-## Bugs and feature requests
+### Bugs and feature requests
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/twbs/bootstrap/blob/v4-dev/.github/CONTRIBUTING.md#using-the-issue-tracker) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/twbs/bootstrap/issues/new).
 
 
-## Documentation
+### Documentation
 
 Bootstrap's documentation, included in this repo in the root directory, is built with [Hugo](https://gohugo.io/) and publicly hosted on GitHub Pages at <https://getbootstrap.com/>. The docs may also be run locally.
 
 Documentation search is powered by [Algolia's DocSearch](https://community.algolia.com/docsearch/). Working on our search? Be sure to set `debug: true` in `site/assets/js/search.js`.
 
-### Running documentation locally
+#### Running documentation locally
 
 1. Run `npm install` to install the Node.js dependencies, including Hugo (the site builder).
 2. Run `npm run test` (or a specific npm script) to rebuild distributed CSS and JavaScript files, as well as our docs assets.
@@ -125,14 +137,14 @@ Documentation search is powered by [Algolia's DocSearch](https://community.algol
 
 Learn more about using Hugo by reading its [documentation](https://gohugo.io/documentation/).
 
-### Documentation for previous releases
+#### Documentation for previous releases
 
 You can find all our previous releases docs on <https://getbootstrap.com/docs/versions/>.
 
 [Previous releases](https://github.com/twbs/bootstrap/releases) and their documentation are also available for download.
 
 
-## Contributing
+### Contributing
 
 Please read through our [contributing guidelines](https://github.com/twbs/bootstrap/blob/v4-dev/.github/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
 
@@ -141,7 +153,7 @@ Moreover, if your pull request contains JavaScript patches or features, you must
 Editor preferences are available in the [editor config](https://github.com/twbs/bootstrap/blob/v4-dev/.editorconfig) for easy use in common text editors. Read more and download plugins at <https://editorconfig.org/>.
 
 
-## Community
+### Community
 
 Get updates on Bootstrap's development and chat with the project maintainers and community members.
 
@@ -153,14 +165,14 @@ Get updates on Bootstrap's development and chat with the project maintainers and
 - Developers should use the keyword `bootstrap` on packages which modify or add to the functionality of Bootstrap when distributing through [npm](https://www.npmjs.com/browse/keyword/bootstrap) or similar delivery mechanisms for maximum discoverability.
 
 
-## Versioning
+### Versioning
 
 For transparency into our release cycle and in striving to maintain backward compatibility, Bootstrap is maintained under [the Semantic Versioning guidelines](https://semver.org/). Sometimes we screw up, but we adhere to those rules whenever possible.
 
 See [the Releases section of our GitHub project](https://github.com/twbs/bootstrap/releases) for changelogs for each release version of Bootstrap. Release announcement posts on [the official Bootstrap blog](https://blog.getbootstrap.com/) contain summaries of the most noteworthy changes made in each release.
 
 
-## Creators
+### Creators
 
 **Mark Otto**
 
@@ -173,7 +185,7 @@ See [the Releases section of our GitHub project](https://github.com/twbs/bootstr
 - <https://github.com/fat>
 
 
-## Thanks
+### Thanks
 
 <a href="https://www.browserstack.com/">
   <img src="https://live.browserstack.com/images/opensource/browserstack-logo.svg" alt="BrowserStack Logo" width="192" height="42">
@@ -182,7 +194,7 @@ See [the Releases section of our GitHub project](https://github.com/twbs/bootstr
 Thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to test in real browsers!
 
 
-## Sponsors
+### Sponsors
 
 Support this project by becoming a sponsor. Your logo will show up here with a link to your website. [[Become a sponsor](https://opencollective.com/bootstrap#sponsor)]
 
@@ -198,13 +210,13 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 [![](https://opencollective.com/bootstrap/sponsor/9/avatar.svg)](https://opencollective.com/bootstrap/sponsor/9/website)
 
 
-## Backers
+### Backers
 
 Thank you to all our backers! 🙏 [[Become a backer](https://opencollective.com/bootstrap#backer)]
 
 [![Backers](https://opencollective.com/bootstrap/backers.svg?width=890)](https://opencollective.com/bootstrap#backers)
 
 
-## Copyright and license
+### Copyright and license
 
 Code and documentation copyright 2011-2022 the [Bootstrap Authors](https://github.com/twbs/bootstrap/graphs/contributors) and [Twitter, Inc.](https://twitter.com) Code released under the [MIT License](https://github.com/twbs/bootstrap/blob/main/LICENSE). Docs released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).
