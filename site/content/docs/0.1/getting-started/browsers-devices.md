@@ -1,11 +1,14 @@
 ---
 layout: docs
 title: Browsers and devices
-description: Learn about the browsers and devices, from modern to old, that are supported by Bootstrap, including known quirks and bugs for each.
+description: Learn about the browsers and devices that are supported by es-bs-base, including known quirks and bugs for each.
 group: getting-started
 toc: true
 ---
 
+<!-- TODO: link to confluence, or other documentation around supported versions? -->
+
+<!--
 ## Supported browsers
 
 Bootstrap supports the **latest, stable releases** of all major browsers and platforms. On Windows, **we support Internet Explorer 10-11 / Microsoft Edge**.
@@ -180,3 +183,4 @@ In order to provide the best possible experience to old and buggy browsers, Boot
 These validation warnings don't matter in practice since the non-hacky portion of our CSS does fully validate and the hacky portions don't interfere with the proper functioning of the non-hacky portion, hence why we deliberately ignore these particular warnings.
 
 Our HTML docs likewise have some trivial and inconsequential HTML validation warnings due to our inclusion of a workaround for [a certain Firefox bug](https://bugzilla.mozilla.org/show_bug.cgi?id=654072).
+-->

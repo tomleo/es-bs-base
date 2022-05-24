@@ -1,11 +1,12 @@
 ---
 layout: docs
 title: Download
-description: Download Bootstrap to get the compiled CSS and JavaScript, source code, or include it with your favorite package managers like npm, RubyGems, and more.
+description: Download es-bs-base to get the compiled CSS and JavaScript, source code, or include it with npm.
 group: getting-started
 toc: true
 ---
 
+<!--
 ## Compiled CSS and JS
 
 Download ready-to-use compiled code for **Bootstrap v{{< param current_version >}}** to easily drop into your project, which includes:
@@ -16,7 +17,9 @@ Download ready-to-use compiled code for **Bootstrap v{{< param current_version >
 This doesn't include documentation, source files, or any optional JavaScript dependencies (jQuery and Popper).
 
 <a href="{{< param "download.dist" >}}" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download Bootstrap');">Download</a>
+-->
 
+<!--
 ## Source files
 
 Compile Bootstrap with your own asset pipeline by downloading our source Sass, JavaScript, and documentation files. This option requires some additional tooling:
@@ -27,12 +30,15 @@ Compile Bootstrap with your own asset pipeline by downloading our source Sass, J
 Should you require our full set of [build tools]({{< docsref "/getting-started/build-tools#tooling-setup" >}}), they are included for developing Bootstrap and its docs, but they're likely unsuitable for your own purposes.
 
 <a href="{{< param "download.source" >}}" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download source');">Download source</a>
+-->
 
+<!--
 ## Examples
 
 If you want to download and examine our [examples]({{< docsref "/examples" >}}), you can grab the already built examples:
 
 <a href="{{< param "download.dist_examples" >}}" class="btn btn-bd-primary" onclick="ga('send', 'event', 'Getting started', 'Download', 'Download Examples');">Download Examples</a>
+-->
 
 ## jsDelivr
 
@@ -51,10 +57,13 @@ If you're using our compiled JavaScript and prefer to include Popper separately,
 <script src="{{< param "cdn.js" >}}" integrity="{{< param "cdn.js_hash" >}}" crossorigin="anonymous"></script>
 ```
 
+<!--
 ## Package managers
 
 Pull in Bootstrap's **source files** into nearly any project with some of the most popular package managers. No matter the package manager, Bootstrap will **require a [Sass compiler]({{< docsref "/getting-started/build-tools#sass" >}}) and [Autoprefixer](https://github.com/postcss/autoprefixer)** for a setup that matches our official compiled versions.
+-->
 
+<!--
 ### npm
 
 Install Bootstrap in your Node.js powered apps with [the npm package](https://www.npmjs.com/package/bootstrap):
@@ -73,7 +82,9 @@ Bootstrap's `package.json` contains some additional metadata under the following
 {{< callout info >}}
 {{< partial "callout-info-npm-starter.md" >}}
 {{< /callout >}}
+-->
 
+<!--
 ### yarn
 
 Install Bootstrap in your Node.js powered apps with [the yarn package](https://yarnpkg.com/en/package/bootstrap):
@@ -81,7 +92,9 @@ Install Bootstrap in your Node.js powered apps with [the yarn package](https://y
 ```sh
 yarn add bootstrap
 ```
+-->
 
+<!--
 ### RubyGems
 
 Install Bootstrap in your Ruby apps using [Bundler](https://bundler.io/) (**recommended**) and [RubyGems](https://rubygems.org/) by adding the following line to your [`Gemfile`](https://bundler.io/gemfile.html):
@@ -97,7 +110,9 @@ gem install bootstrap -v {{< param current_ruby_version >}}
 ```
 
 [See the gem's README](https://github.com/twbs/bootstrap-rubygem/blob/master/README.md) for further details.
+-->
 
+<!--
 ### Composer
 
 You can also install and manage Bootstrap's Sass and JavaScript using [Composer](https://getcomposer.org/):
@@ -105,7 +120,9 @@ You can also install and manage Bootstrap's Sass and JavaScript using [Composer]
 ```sh
 composer require twbs/bootstrap:{{< param current_version >}}
 ```
+-->
 
+<!--
 ### NuGet
 
 If you develop in .NET, you can also install and manage Bootstrap's [CSS](https://www.nuget.org/packages/bootstrap/) or [Sass](https://www.nuget.org/packages/bootstrap.sass/) and JavaScript using [NuGet](https://www.nuget.org/):
@@ -117,3 +134,4 @@ Install-Package bootstrap
 ```powershell
 Install-Package bootstrap.sass
 ```
+-->
