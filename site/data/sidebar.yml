@@ -3,7 +3,6 @@
     - title: Introduction
     - title: Download
     - title: Contents
-    - title: Browsers & devices
     - title: JavaScript
     - title: Theming
     - title: Build tools
@@ -21,6 +20,7 @@
   pages:
     - title: Reboot
     - title: Typography
+    - title: Colors
     - title: Code
     - title: Images
     - title: Tables
@@ -75,18 +75,3 @@
     - title: Text
     - title: Vertical align
     - title: Visibility
-
-# - title: Extend
-#   pages:
-#     - title: Approach
-#     - title: Icons
-
-# - title: Migration
-
-# - title: About
-#   pages:
-#     - title: Overview
-#     - title: Team
-#     - title: Brand
-#     - title: License
-#     - title: Translations

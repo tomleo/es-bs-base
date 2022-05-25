@@ -5,18 +5,17 @@
 .btn-bd-primary {
   font-weight: 600;
   color: $white;
-  background-color: $bd-purple-bright;
-  border-color: $bd-purple-bright;
+  background-color: $blue;
 
   &:hover,
   &:active {
     color: $white;
-    background-color: darken($bd-purple-bright, 10%);
-    border-color: darken($bd-purple-bright, 10%);
+    background-color: darken($blue, 10%);
+    border-color: darken($blue, 10%);
   }
 
   &:focus {
-    box-shadow: 0 0 0 3px rgba($bd-purple-bright, .25);
+    box-shadow: 0 0 0 3px rgba($blue, .25);
   }
 }
 

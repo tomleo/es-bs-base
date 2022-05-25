@@ -54,8 +54,8 @@ params:
   social_image_path:    /docs/0.1/assets/brand/bootstrap-social.png
   social_logo_path:     /docs/0.1/assets/brand/bootstrap-social-logo.png
 
-  current_version:      "0.1.0"
-  current_ruby_version: "0.1.0"
+  current_version:      "0.1.1"
+  current_ruby_version: "0.1.1"
   docs_version:         "0.1"
   rfs_version:          "v8.1.0"
   slack:                "https://bootstrap-slack.herokuapp.com/"
@@ -69,18 +69,17 @@ params:
   twitter:              "EnergySage"
 
   download:
-    source:             "https://github.com/EnergySage/es-bs-base/archive/v0.1.0.zip"
-    dist:               "https://github.com/EnergySage/es-bs-base/releases/download/v0.1.0/bootstrap0.1.0-dist.zip"
-    dist_examples:      "https://github.com/EnergySage/es-bs-base/releases/download/v0.1.0/bootstrap-0.1.0-examples.zip"
+    source:             "https://github.com/EnergySage/es-bs-base/archive/v0.1.1.zip"
+    dist:               "https://github.com/EnergySage/es-bs-base/releases/download/v0.1.1/bootstrap0.1.1-dist.zip"
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
-    css:              "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.0/dist/css/bootstrap.min.css"
+    css:              "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.1/dist/css/bootstrap.min.css"
     css_hash:         "sha384-/HzsDxor0D2Kr3OmJOdJ/6NGC9/5ADDEXmBATS6Q4lmVlfc+W69bDSevZ1oXXpnL"
-    js:               "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.0/dist/js/bootstrap.min.js"
-    js_hash:          "sha384-GsH/Mph6Qam9aL9saQZovjWdPJ8zV4wJUp093sGem578iwcgsgHSS8i0muB6VWn5"
-    js_bundle:        "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.0/dist/js/bootstrap.bundle.min.js"
-    js_bundle_hash:   "sha384-rFjmWkQarRMLmS4gmgGFJJpv1wPehpBZjbbursNR1K/8U4DZp3ehpW8x5GOBrLvS"
+    js:               "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.1/dist/js/bootstrap.min.js"
+    js_hash:          "sha384-ooMs5eFkvSOmXIDuizGVu+FMtUhv4S+EnctL9WniRzuM5ooSXux3Ktfks4BOW0Ha"
+    js_bundle:        "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.1/dist/js/bootstrap.bundle.min.js"
+    js_bundle_hash:   "sha384-hazbPSvspAFtAhMLvT62NumrrWRE18cc+K1i7kniJFCTBriwaINvznZcN5oJ+wQE"
     jquery:           "https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     jquery_hash:      "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     popper:           "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"

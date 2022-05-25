@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Versions
-description: An appendix of hosted documentation for nearly every release of Bootstrap, from v1 through v4.
+description: An appendix of documentation for releases of es-bs-base.
 ---
 
 {{< list-versions.inline >}}

@@ -5,7 +5,7 @@ const year = new Date().getFullYear()
 
 function getBanner(pluginFilename) {
   return `/*!
-  * EnergySage Bootstrap Base
+  * EnergySage Flavor of Bootstrap
   *
   * Bootstrap${pluginFilename ? ` ${pluginFilename}` : ''} v${pkg.version} (${pkg.homepage})
   * Copyright 2011-${year} ${pkg.author}

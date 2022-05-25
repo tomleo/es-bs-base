@@ -2,4 +2,4 @@
   baseurl: "https://energysage.com/"
   description: "Every minor and patch release from v1 is listed below."
   versions:
-    - v: "0.1.0"
+    - v: "0.1.1"

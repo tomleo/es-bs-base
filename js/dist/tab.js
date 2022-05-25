@@ -1,7 +1,7 @@
 /*!
-  * EnergySage Bootstrap Base
+  * EnergySage Flavor of Bootstrap
   *
-  * Bootstrap tab.js v0.1.0 (https://energysage.com/)
+  * Bootstrap tab.js v0.1.1 (https://energysage.com/)
   * Copyright 2011-2022 EnergySage
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */

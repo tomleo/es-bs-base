@@ -35,11 +35,3 @@ jobs:
 
       - name: Validate HTML
         run: npm run docs-vnu
-
-      - name: Run linkinator
-        uses: JustinBeckwith/linkinator-action@v1
-        with:
-          paths: _site
-          recurse: true
-          verbosity: error
-          skip: "^(?!http://localhost)"
