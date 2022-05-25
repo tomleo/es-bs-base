@@ -6,15 +6,15 @@
 // Color system
 
 $white:    #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-100: #fafafa !default;
+$gray-200: #ececec !default;
+$gray-300: #dddddd !default;
+$gray-400: #bababa !default;
+$gray-500: #999999 !default;
+$gray-600: #7e7e7e !default;
+$gray-700: #565656 !default;
+$gray-800: #404040 !default;
+$gray-900: #292929 !default;
 $black:    #000 !default;
 
 $grays: () !default;
@@ -33,16 +33,16 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue:    #275ba9 !default;
+$indigo:  #152f87 !default;
+$purple:  #822a85 !default;
+$pink:    #c84486 !default;
+$red:     #b93737 !default;
+$orange:  #ffbf57 !default;
+$yellow:  #f6b140 !default;
+$green:   #008445 !default;
+$teal:    #37b6aa !default;
+$cyan:    #007eb0 !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -64,14 +64,14 @@ $colors: map-merge(
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $cyan !default;
+$secondary:     $cyan !default;
 $success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
+$info:          $indigo !default;
+$warning:       $orange !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+$light:         $gray-200 !default;
+$dark:          $gray-700 !default;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
@@ -92,7 +92,7 @@ $theme-colors: map-merge(
 $theme-color-interval:      8% !default;
 
 // The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
-$yiq-contrasted-threshold:  150 !default;
+$yiq-contrasted-threshold:  163 !default;
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
 $yiq-text-dark:             $gray-900 !default;
@@ -113,7 +113,7 @@ $escaped-characters: (
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-caret:                                true !default;
-$enable-rounded:                              true !default;
+$enable-rounded:                              false !default;
 $enable-shadows:                              false !default;
 $enable-gradients:                            false !default;
 $enable-transitions:                          true !default;
@@ -122,9 +122,9 @@ $enable-hover-media-query:                    false !default; // Deprecated, no 
 $enable-grid-classes:                         true !default;
 $enable-pointer-cursor-for-buttons:           true !default;
 $enable-print-styles:                         true !default;
-$enable-responsive-font-sizes:                false !default;
-$enable-validation-icons:                     true !default;
-$enable-deprecation-messages:                 true !default;
+$enable-responsive-font-sizes:                true !default;
+$enable-validation-icons:                     false !default;
+$enable-deprecation-messages:                 false !default;
 
 
 // Spacing
@@ -248,9 +248,9 @@ $box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
 $box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
 
 $component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$component-active-bg:         $indigo !default;
 
-$caret-width:                 .3em !default;
+$caret-width:                 .4em !default;
 $caret-vertical-align:        $caret-width * .85 !default;
 $caret-spacing:               $caret-width * .85 !default;
 
@@ -274,40 +274,40 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg:                $font-size-base * 1.25 !default;
-$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.125 !default;
+$font-size-sm:                $font-size-base * 0.875 !default;
 
-$font-weight-lighter:         lighter !default;
+$font-weight-lighter:         100 !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
-$font-weight-bold:            700 !default;
-$font-weight-bolder:          bolder !default;
+$font-weight-bold:            500 !default;
+$font-weight-bolder:          600 !default;
 
 $font-weight-base:            $font-weight-normal !default;
 $line-height-base:            1.5 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
+$h1-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                $font-size-base * 1.5 !default;
+$h3-font-size:                $font-size-base * 1.375 !default;
+$h4-font-size:                $font-size-base !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer * .5 !default;
-$headings-font-family:        null !default;
+$headings-font-family:        $font-family-sans-serif !default;
 $headings-font-weight:        500 !default;
 $headings-line-height:        1.2 !default;
-$headings-color:              null !default;
+$headings-color:              $gray-900 !default;
 
-$display1-size:               6rem !default;
-$display2-size:               5.5rem !default;
-$display3-size:               4.5rem !default;
+$display1-size:               5rem !default;
+$display2-size:               4.5rem !default;
+$display3-size:               4rem !default;
 $display4-size:               3.5rem !default;
 
 $display1-weight:             300 !default;
@@ -384,11 +384,11 @@ $table-border-level:          -6 !default;
 //
 // Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
 
-$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-y:         .65rem !default;
 $input-btn-padding-x:         .75rem !default;
-$input-btn-font-family:       null !default;
+$input-btn-font-family:       $font-family-sans-serif !default;
 $input-btn-font-size:         $font-size-base !default;
-$input-btn-line-height:       $line-height-base !default;
+$input-btn-line-height:       $line-height-base * 0.9 !default;
 
 $input-btn-focus-width:       .2rem !default;
 $input-btn-focus-color:       rgba($component-active-bg, .25) !default;
@@ -773,8 +773,8 @@ $dropdown-divider-margin-y:         $nav-divider-margin-y !default;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
 
 $dropdown-link-color:               $gray-900 !default;
-$dropdown-link-hover-color:         darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg:            $gray-200 !default;
+$dropdown-link-hover-color:         $white !default;
+$dropdown-link-hover-bg:            $primary !default;
 
 $dropdown-link-active-color:        $component-active-color !default;
 $dropdown-link-active-bg:           $component-active-bg !default;
@@ -837,7 +837,7 @@ $card-border-width:                 $border-width !default;
 $card-border-radius:                $border-radius !default;
 $card-border-color:                 rgba($black, .125) !default;
 $card-inner-border-radius:          subtract($card-border-radius, $card-border-width) !default;
-$card-cap-bg:                       rgba($black, .03) !default;
+$card-cap-bg:                       $white !default;
 $card-cap-color:                    null !default;
 $card-height:                       null !default;
 $card-color:                        null !default;
@@ -858,9 +858,9 @@ $card-columns-margin:               $card-spacer-y !default;
 $tooltip-font-size:                 $font-size-sm !default;
 $tooltip-max-width:                 200px !default;
 $tooltip-color:                     $white !default;
-$tooltip-bg:                        $black !default;
+$tooltip-bg:                        $gray-700 !default;
 $tooltip-border-radius:             $border-radius !default;
-$tooltip-opacity:                   .9 !default;
+$tooltip-opacity:                   1 !default;
 $tooltip-padding-y:                 .25rem !default;
 $tooltip-padding-x:                 .5rem !default;
 $tooltip-margin:                    0 !default;
@@ -889,8 +889,8 @@ $popover-border-radius:             $border-radius-lg !default;
 $popover-inner-border-radius:       subtract($popover-border-radius, $popover-border-width) !default;
 $popover-box-shadow:                0 .25rem .5rem rgba($black, .2) !default;
 
-$popover-header-bg:                 darken($popover-bg, 3%) !default;
-$popover-header-color:              $headings-color !default;
+$popover-header-bg:                 $gray-700 !default;
+$popover-header-color:              $white !default;
 $popover-header-padding-y:          .5rem !default;
 $popover-header-padding-x:          .75rem !default;
 
@@ -900,7 +900,7 @@ $popover-body-padding-x:            $popover-header-padding-x !default;
 
 $popover-arrow-width:               1rem !default;
 $popover-arrow-height:              .5rem !default;
-$popover-arrow-color:               $popover-bg !default;
+$popover-arrow-color:               $gray-700 !default;
 
 $popover-arrow-outer-color:         fade-in($popover-border-color, .05) !default;
 
@@ -925,10 +925,10 @@ $toast-header-border-color:         rgba(0, 0, 0, .05) !default;
 
 // Badges
 
-$badge-font-size:                   75% !default;
-$badge-font-weight:                 $font-weight-bold !default;
-$badge-padding-y:                   .25em !default;
-$badge-padding-x:                   .4em !default;
+$badge-font-size:                   100% !default;
+$badge-font-weight:                 $font-weight-bolder !default;
+$badge-padding-y:                   .5em !default;
+$badge-padding-x:                   1em !default;
 $badge-border-radius:               $border-radius !default;
 
 $badge-transition:                  $btn-transition !default;
@@ -962,8 +962,8 @@ $modal-content-inner-border-radius: subtract($modal-content-border-radius, $moda
 $modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
 
-$modal-backdrop-bg:                 $black !default;
-$modal-backdrop-opacity:            .5 !default;
+$modal-backdrop-bg:                 rgb(41, 41, 41) !default; // TODO: put into colors
+$modal-backdrop-opacity:            .2 !default;
 $modal-header-border-color:         $border-color !default;
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;
@@ -1060,13 +1060,13 @@ $breadcrumb-font-size:              null !default;
 
 $breadcrumb-padding-y:              .75rem !default;
 $breadcrumb-padding-x:              1rem !default;
-$breadcrumb-item-padding:           .5rem !default;
+$breadcrumb-item-padding:           .3rem !default;
 
 $breadcrumb-margin-bottom:          1rem !default;
 
-$breadcrumb-bg:                     $gray-200 !default;
+$breadcrumb-bg:                     $white !default;
 $breadcrumb-divider-color:          $gray-600 !default;
-$breadcrumb-active-color:           $gray-600 !default;
+$breadcrumb-active-color:           $gray-900 !default;
 $breadcrumb-divider:                quote("/") !default;
 
 $breadcrumb-border-radius:          $border-radius !default;
@@ -1146,3 +1146,34 @@ $user-selects: all, auto, none !default;
 
 $print-page-size:                   a3 !default;
 $print-body-min-width:              map-get($grid-breakpoints, "lg") !default;
+
+
+//----------------------------
+// EnergySage Extended Colors
+//----------------------------
+
+// fusv-disable
+$mid: $gray-300;
+$mid-dark: $gray-600; // Non standard
+$highlight: $indigo; // Non standard
+$highlight-dark: $blue; // Non standard
+$lightblue: #8cd1ff;
+$grayblue: #c9e9f6;
+
+$font-size-xxl: $font-size-base * 3;
+$font-size-xl: $font-size-base * 1.375;
+$font-size-xs: $font-size-base * 0.75;
+
+$headings-font-family-higher: null; // non standard
+
+$b-table-stacked-gap: 2rem;
+$b-table-sort-icon-bg-not-sorted: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'><path fill='white' opacity='.3' d='M51 1l25 23 24 22H1l25-22zM51 101l25-23 24-22H1l25 22z'/></svg>");
+$b-table-sort-icon-bg-ascending: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'><path fill='white' d='M51 1l25 23 24 22H1l25-22z'/><path fill='white' opacity='.3' d='M51 101l25-23 24-22H1l25 22z'/></svg>");
+$b-table-sort-icon-bg-descending: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='101' height='101' view-box='0 0 101 101' preserveAspectRatio='none'><path fill='white' opacity='.3' d='M51 1l25 23 24 22H1l25-22z'/><path fill='white' d='M51 101l25-23 24-22H1l25 22z'/></svg>");
+
+$input-color-placeholder: $gray-700;
+
+$font-family-serif: $font-family-sans-serif;
+$font-weight-lightest: lighter;
+$font-weight-boldest: 700;
+// fusv-enable

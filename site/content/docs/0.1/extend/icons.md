@@ -1,10 +1,11 @@
 ---
 layout: docs
 title: Icons
-description: Guidance and suggestions for using external icon libraries with Bootstrap.
+description: Guidance and suggestions for using icon at es-bs-base.
 group: extend
 ---
 
+<!--
 ## Bootstrap Icons
 
 While you won't find a built-in icon library in Bootstrap, our separate [Bootstrap Icons]({{< param icons >}}) projects is a growing set of open source SVGs you can use. While they're designed first and foremost to work with our components and documentation, you can use them in any project.
@@ -41,3 +42,6 @@ While we haven't tried these out, they do look promising and provide multiple fo
 - [Icons8](https://icons8.com/)
 - [icofont](https://icofont.com/)
 - [CoreUI Icons](https://icons.coreui.io/)
+-->
+
+TODO

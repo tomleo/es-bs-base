@@ -76,17 +76,17 @@
     - title: Vertical align
     - title: Visibility
 
-- title: Extend
-  pages:
-    - title: Approach
-    - title: Icons
+# - title: Extend
+#   pages:
+#     - title: Approach
+#     - title: Icons
 
-- title: Migration
+# - title: Migration
 
-- title: About
-  pages:
-    - title: Overview
-    - title: Team
-    - title: Brand
-    - title: License
-    - title: Translations
+# - title: About
+#   pages:
+#     - title: Overview
+#     - title: Team
+#     - title: Brand
+#     - title: License
+#     - title: Translations

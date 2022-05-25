@@ -12,24 +12,25 @@
         <a class="nav-link{{ if eq .Page.Layout "docs" }} active{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link{{ if eq .Page.Title "Examples" }} active{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
+        <!--<a class="nav-link{{ if eq .Page.Title "Examples" }} active{{ end }}" href="/docs/{{ .Site.Params.docs_version }}/examples/">Examples</a>-->
+        <!--TODO: add examples to this doc? Or link to our styleguide? -->
+        <span class="nav-link disabled">Examples</span>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ .Site.Params.icons }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ .Site.Params.themes }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ .Site.Params.expo }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');" target="_blank" rel="noopener">Expo</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="{{ .Site.Params.blog }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+        <!--<a class="nav-link" href="{{ .Site.Params.icons }}" target="_blank" rel="noopener">Icons</a>-->
+        <!--TODO: add icons to this doc? Or link to our styleguide? -->
+        <span class="nav-link disabled">Icons</span>
       </li>
     </ul>
   </div>
 
   <ul class="navbar-nav ml-md-auto">
+    <li class="nav-item">
+      <span class="nav-item nav-link">
+        v{{ .Site.Params.docs_version }}
+      </span>
+    </li>
+    <!--
     <li class="nav-item dropdown">
       <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-expanded="false">
         v{{ .Site.Params.docs_version }}
@@ -45,28 +46,15 @@
         <a class="dropdown-item" href="/docs/versions/">All versions</a>
       </div>
     </li>
-
+    -->
     <li class="nav-item">
       <a class="nav-link pl-2 pr-1 mx-1 py-3 my-n2" href="{{ .Site.Params.github_org }}" target="_blank" rel="noopener" aria-label="GitHub">
         {{ partial "icons/github.svg" (dict "class" "navbar-nav-svg") }}
       </a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link px-1 mx-1 py-3 my-n2" href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
-        {{ partial "icons/twitter.svg" (dict "class" "navbar-nav-svg") }}
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link px-1 mx-1 py-3 my-n2" href="{{ .Site.Params.slack }}" target="_blank" rel="noopener" aria-label="Slack">
-        {{ partial "icons/slack.svg" (dict "class" "navbar-nav-svg") }}
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link px-1 mx-1 py-3 my-n2" href="{{ .Site.Params.opencollective }}/" target="_blank" rel="noopener" aria-label="Open Collective">
-        {{ partial "icons/opencollective.svg" (dict "class" "navbar-nav-svg") }}
-      </a>
-    </li>
   </ul>
 
+  <!--
   <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="/docs/{{ .Site.Params.docs_version }}/getting-started/download/">Download</a>
+  -->
 </header>
