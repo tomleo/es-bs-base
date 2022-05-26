@@ -1,7 +1,7 @@
 /*!
   * EnergySage Flavor of Bootstrap
   *
-  * Bootstrap toast.js v0.1.3 (https://energysage.com/)
+  * Bootstrap toast.js v0.1.4 (https://energysage.com/)
   * Copyright 2011-2022 EnergySage
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
