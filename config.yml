@@ -70,15 +70,15 @@ params:
 
   download:
     source:             "https://github.com/EnergySage/es-bs-base/archive/v0.1.5.zip"
-    dist:               "https://github.com/EnergySage/es-bs-base/releases/download/v0.1.5/bootstrap0.1.5-dist.zip"
+    dist:               "https://github.com/EnergySage/es-bs-base/releases/download/v0.1.5/bootstrap-0.1.5-dist.zip"
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
-    css:              "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.1/dist/css/bootstrap.min.css"
+    css:              "https://cdn.jsdelivr.net/npm/@energysage/es-bs-base@0.1.5/dist/css/bootstrap.min.css"
     css_hash:         "sha384-/HzsDxor0D2Kr3OmJOdJ/6NGC9/5ADDEXmBATS6Q4lmVlfc+W69bDSevZ1oXXpnL"
-    js:               "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.1/dist/js/bootstrap.min.js"
+    js:               "https://cdn.jsdelivr.net/npm/@energysage/es-bs-base@0.1.5/dist/js/bootstrap.min.js"
     js_hash:          "sha384-JJuvJq2l6fVcZn4b1+80gBb+mD+mm8gRozgoG/rICG/5Wf3COsPlwVirjKDJmXQk"
-    js_bundle:        "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.1/dist/js/bootstrap.bundle.min.js"
+    js_bundle:        "https://cdn.jsdelivr.net/npm/@energysage/es-bs-base@0.1.5/dist/js/bootstrap.bundle.min.js"
     js_bundle_hash:   "sha384-xNjSRr2p9YCJ1gTgsGoV64EJJks7xbJy2jNHgSjHLtFb3pvDe8np9zhCQkRKqcR1"
     jquery:           "https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     jquery_hash:      "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
