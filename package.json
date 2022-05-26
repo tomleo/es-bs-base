@@ -31,7 +31,6 @@
   "style": "dist/css/bootstrap.css",
   "scripts": {
     "start": "npm-run-all --parallel watch docs-serve",
-    "bundlewatch": "bundlewatch --config .bundlewatch.config.json",
     "css": "npm-run-all css-compile css-prefix css-minify",
     "css-compile": "node-sass --output-style expanded --source-map true --source-map-contents true --precision 6 scss/ -o dist/css/",
     "css-lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint-*",
@@ -71,7 +70,7 @@
     "release-zip": "cross-env-shell \"rm -rf bootstrap-$npm_package_version-dist && cp -r dist/ bootstrap-$npm_package_version-dist && zip -r9 bootstrap-$npm_package_version-dist.zip bootstrap-$npm_package_version-dist && rm -rf bootstrap-$npm_package_version-dist\"",
     "dist": "npm-run-all --aggregate-output --parallel css js",
     "test": "npm-run-all lint dist js-test docs-build docs-lint",
-    "not-netlify": "cross-env-shell npm-run-all dist release-sri docs-build",
+    "kitchen-sink": "cross-env-shell npm-run-all dist release-sri docs-build",
     "watch": "npm-run-all --parallel watch-*",
     "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm-run-all css-lint css-compile css-prefix\"",
     "watch-css-docs": "nodemon --watch site/assets/scss/ --ext scss --exec \"npm run css-lint\"",
@@ -91,7 +90,6 @@
     "@rollup/plugin-node-resolve": "^13.2.1",
     "autoprefixer": "^10.4.4",
     "babel-plugin-istanbul": "^6.1.1",
-    "bundlewatch": "^0.3.3",
     "clean-css-cli": "^5.6.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.13.0",
@@ -136,27 +134,6 @@
   ],
   "hugo-bin": {
     "buildTags": "extended"
-  },
-  "jspm": {
-    "registry": "npm",
-    "main": "js/bootstrap",
-    "directories": {
-      "lib": "dist"
-    },
-    "shim": {
-      "js/bootstrap": {
-        "deps": [
-          "jquery",
-          "popper.js"
-        ],
-        "exports": "$"
-      }
-    },
-    "dependencies": {},
-    "peerDependencies": {
-      "jquery": "1.9.1 - 3",
-      "popper.js": "^1.16.1"
-    }
   },
   "license": "MIT",
   "private": false
