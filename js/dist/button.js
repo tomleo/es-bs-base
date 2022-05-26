@@ -1,7 +1,7 @@
 /*!
   * EnergySage Flavor of Bootstrap
   *
-  * Bootstrap button.js v0.1.4 (https://energysage.com/)
+  * Bootstrap button.js v0.1.5 (https://energysage.com/)
   * Copyright 2011-2022 EnergySage
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */

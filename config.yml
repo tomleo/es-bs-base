@@ -54,8 +54,8 @@ params:
   social_image_path:    /docs/0.1/assets/brand/bootstrap-social.png
   social_logo_path:     /docs/0.1/assets/brand/bootstrap-social-logo.png
 
-  current_version:      "0.1.4"
-  current_ruby_version: "0.1.4"
+  current_version:      "0.1.5"
+  current_ruby_version: "0.1.5"
   docs_version:         "0.1"
   rfs_version:          "v8.1.0"
   slack:                "https://bootstrap-slack.herokuapp.com/"
@@ -69,17 +69,17 @@ params:
   twitter:              "EnergySage"
 
   download:
-    source:             "https://github.com/EnergySage/es-bs-base/archive/v0.1.4.zip"
-    dist:               "https://github.com/EnergySage/es-bs-base/releases/download/v0.1.4/bootstrap0.1.4-dist.zip"
+    source:             "https://github.com/EnergySage/es-bs-base/archive/v0.1.5.zip"
+    dist:               "https://github.com/EnergySage/es-bs-base/releases/download/v0.1.5/bootstrap0.1.5-dist.zip"
 
   cdn:
     # See https://www.srihash.org for info on how to generate the hashes
     css:              "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.1/dist/css/bootstrap.min.css"
     css_hash:         "sha384-/HzsDxor0D2Kr3OmJOdJ/6NGC9/5ADDEXmBATS6Q4lmVlfc+W69bDSevZ1oXXpnL"
     js:               "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.1/dist/js/bootstrap.min.js"
-    js_hash:          "sha384-RLrmPBXbGethsMWaQgnCJVyuCXfd0tqWZ3P7/LPB307k5XLF/XAVOYxFKyUSrP2I"
+    js_hash:          "sha384-JJuvJq2l6fVcZn4b1+80gBb+mD+mm8gRozgoG/rICG/5Wf3COsPlwVirjKDJmXQk"
     js_bundle:        "https://cdn.jsdelivr.net/npm/es-bs-base@0.1.1/dist/js/bootstrap.bundle.min.js"
-    js_bundle_hash:   "sha384-iwiEj1/YR/AgXyhwzzVxDeiyRTKNR5Rsc7+y/Nrt0NB4bHqr37QXMO6Fx+/b0lq7"
+    js_bundle_hash:   "sha384-xNjSRr2p9YCJ1gTgsGoV64EJJks7xbJy2jNHgSjHLtFb3pvDe8np9zhCQkRKqcR1"
     jquery:           "https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     jquery_hash:      "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     popper:           "https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
