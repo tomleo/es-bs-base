@@ -1,9 +1,10 @@
 /*!
   * EnergySage Flavor of Bootstrap
+  * Copyright 2022-2022 (https://github.com/EnergySage/es-bs-base/blob/main/LICENSE)
   *
-  * Bootstrap v0.1.5 (https://energysage.com/)
-  * Copyright 2011-2022 EnergySage
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * Bootstrap
+  * Copyright 2011-2021
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/v4.6.1/LICENSE)
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
