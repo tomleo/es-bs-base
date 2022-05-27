@@ -1,15 +1,15 @@
 'use strict'
 
-const pkg = require('../package.json')
 const year = new Date().getFullYear()
 
-function getBanner(pluginFilename) {
+function getBanner() {
   return `/*!
   * EnergySage Flavor of Bootstrap
+  * Copyright 2022-${year} (https://github.com/EnergySage/es-bs-base/blob/main/LICENSE)
   *
-  * Bootstrap${pluginFilename ? ` ${pluginFilename}` : ''} v${pkg.version} (${pkg.homepage})
-  * Copyright 2011-${year} ${pkg.author}
-  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+  * Bootstrap
+  * Copyright 2011-2021
+  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/v4.6.1/LICENSE)
   */`
 }
 

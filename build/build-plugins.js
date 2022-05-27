@@ -68,7 +68,7 @@ const build = async plugin => {
   })
 
   await bundle.write({
-    banner: banner(pluginFilename),
+    banner: banner(),
     format: 'umd',
     name: plugin,
     sourcemap: true,
